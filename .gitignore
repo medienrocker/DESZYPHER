@@ -1,0 +1,85 @@
+# This .gitignore file should be placed at the root of your Unity project directory
+
+# Ignore the Library folder
+[Ll]ibrary/
+
+# Ignore the Temp folder
+[Tt]emp/
+
+# Ignore the Object files directory
+[Oo]bj/
+
+# Ignore the build directory
+[Bb]uild/
+
+# Ignore the logs directory
+[Ll]ogs/
+
+# Ignore the user settings folder
+UserSettings/
+
+# Ignore crash reports
+CrashReports/
+
+# Ignore the package dependencies directory
+[Pp]ackages/manifest.json
+[Pp]ackages/packages-lock.json
+
+# Ignore auto-generated files
+/Assets/AssetStoreTools*
+
+# Ignore compiled DLLs
+*.dll
+*.dll.meta
+
+# Ignore compiled EXEs
+*.exe
+*.exe.meta
+
+# Ignore compiled JARs
+*.jar
+*.jar.meta
+
+# Ignore compiled APIs
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Ignore Unity3D-generated files
+*.pidb.meta
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Ignore builds
+*.apk
+*.aab
+*.unitypackage
+
+# Ignore gradle files
+.gradle
+*.gradle
+gradle-app.gradle
+
+# Ignore logs
+*.log
+*.log.*
+
+# Ignore temporary files
+*.temp
+
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+
+# Ignore Windows-specific files
+Thumbs.db
+Desktop.ini
