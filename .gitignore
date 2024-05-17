@@ -1,48 +1,42 @@
-# This .gitignore file should be placed at the root of your Unity project directory
+# Exclude everything by default
+*
 
-# Ignore the Library folder
+# Allow git to track .gitignore file itself
+!.gitignore
+
+# Include directories and their contents
+# You need to explicitly include directories and their parent directories
+!Assets/
+!Assets/_*
+!Assets/_*/**
+
+# Include specific files and directories in Assets
+!Assets/**/*.meta
+!Assets/**/*.prefab
+!Assets/**/*.unity
+!Assets/**/*.cs
+!Assets/**/*.mat
+!Assets/**/*.shader
+
+# Exclude Library, Temp, Logs, and other unnecessary folders
 [Ll]ibrary/
-
-# Ignore the Temp folder
 [Tt]emp/
-
-# Ignore the Object files directory
-[Oo]bj/
-
-# Ignore the build directory
-[Bb]uild/
-
-# Ignore the logs directory
 [Ll]ogs/
-
-# Ignore the user settings folder
 UserSettings/
 
-# Ignore crash reports
-CrashReports/
+# Exclude build artifacts
+[Bb]uild/
+[Bb]uilds/
+[Bb]in/
 
-# Ignore the package dependencies directory
-[Pp]ackages/manifest.json
-[Pp]ackages/packages-lock.json
+# Exclude system files
+.DS_Store
+Thumbs.db
 
-# Ignore auto-generated files
-/Assets/AssetStoreTools*
-
-# Ignore compiled DLLs
-*.dll
-*.dll.meta
-
-# Ignore compiled EXEs
-*.exe
-*.exe.meta
-
-# Ignore compiled JARs
-*.jar
-*.jar.meta
-
-# Ignore compiled APIs
+# Exclude Visual Studio and MonoDevelop files
+.vscode/
+.vscode/*
 *.csproj
-*.unityproj
 *.sln
 *.suo
 *.tmp
@@ -52,34 +46,25 @@ CrashReports/
 *.booproj
 *.svd
 
-# Ignore Unity3D-generated files
+# Exclude Unity auto-generated files
 *.pidb.meta
 *.pdb
 *.mdb
 *.opendb
 *.VC.db
 
-# Ignore builds
-*.apk
-*.aab
-*.unitypackage
-
-# Ignore gradle files
-.gradle
-*.gradle
-gradle-app.gradle
-
-# Ignore logs
+# Exclude crash reports and log files
+CrashReports/
 *.log
 *.log.*
 
-# Ignore temporary files
+# Exclude temporary files
 *.temp
 
-# Ignore Python compiled files
+# Exclude Python compiled files
 *.pyc
 __pycache__/
 
-# Ignore Windows-specific files
+# Exclude Windows-specific files
 Thumbs.db
 Desktop.ini
